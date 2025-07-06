@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #26A69A;
+    --secondary-color: #CBFFD0;
+    --text-color: #000000;
+    --background-color: #e5e5e5;
+    --neutral-color: #ffffff;
+    --font-family: 'poppins', sans-serif; 
+}
+
+html, body{
+    background-color: var(--background-color);
+    font-family: var(--font-family); 
+}
+
+.container{
+    max-width: 1440px;
+    background-color: var(--background-color); 
+    width: 75%;
+    margin: 0 auto;
+    background: url(../images/hero-image.png);
+    background-size: cover; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding: 0 2rem 0 0;
+    align-items: center;
+}
+
+ .navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+ 
+   
+ }
+
+  .navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+   
+ }
+
+.dropdown-icon{
+   width: 1rem;
+}
+
+.logo-png{
+    width: 6rem;
+}
+
+
+.login-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin: 0 0.5rem 0 0;
+    box-shadow: rgba(75, 68, 68, 0.1);
+    font-family: var(--font-family);
+}
+
+.sign-up-btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    cursor: pointer;  
+    font-family: var(--font-family);
+ }
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-hero-content h1{
+    width: 430px;
+    font-size: 2.5rem;
+    margin: 4rem 0 0 4rem;
+    font-family: poppins;
+} 
+
+.left-hero-content p{
+    width: 360px;
+    font-size: 1.4rem;
+    margin: 0.5rem 0 0 4rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: justify;
+} 
+
+.store-badge{
+   width: 7px;
+}
+
+h1 p{
+    font-family: inherit;
+}
+
+.righ-hero-image{
+    width: 200px;
+    height: 350px;
+    background-color: var(--secondary-color);
+    border-radius: 10rem 0 0 0;
+    position: relative;
+    margin: 3.8rem 0 0 4rem;
+
+}
+
+.pc-mockup-png {
+    width: 18rem;
+    position: relative;
+    right: 6rem;
+    top: 6rem;
+}
+
+.playstore-badge{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 4rem;
+}
+
+.features{
+   background-color:var(--neutral-color); 
+   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); 
+}
+
+.feature-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    font-family: var(--background-color);
+    display: inline-block;
+    position: relative;
+    left: 18rem;
+}
+
+.feature-section-image{
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 300px;
+    border-radius: 0 0  6rem 0;
+    position: relative;
+    margin: 3.8rem 0 4rem 0;  
+    bottom: 10rem;
+}
+
+.phone-mockup{
+    width: 16rem;
+    position: relative;
+    left: -0.6rem;
+    top: 2rem;
+}
+ 
+.features{
+    display: flex; 
+    justify-content: space-between;
+} 
+
+.feature-card{
+    width: 22rem; 
+    height: 22rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 3rem 4rem 0 0;
+    
+}
+
+.card-tracking{
+    width: 10rem; 
+    height: 10rem;
+    background-color: var(--primary-color);
+    margin: auto;
+    border-radius: 0.8rem;
+
+}
+
+.card-report{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+.card-reminder{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+.card-insight{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--primary-color);
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+.card-reminder-title{
+    margin: 0.1rem  auto;
+    text-align: center;
+}
+
+.card-reminder-para{
+    font-size: 0.8rem;
+    width: 8rem;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+.card-reminder-vector{
+    margin: 0.6rem 0 0 0.6rem;
+    width: 2rem;
+}
+
+.finance-vector{
+    width: 1.8rem;
+    margin: 0.6rem 0 0 0.6rem;
+}
+
+.card-visual-report{
+    text-align: center;
+    margin: 0.3rem auto; 
+}
+
+.card-visual-para{
+    font-size: 0.7rem;
+    width: 8rem;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+.card-reminder-vector{
+    width: 1.9rem;
+    margin: 0.6rem 0 0 0.6rem;
+}
+
+.card-reminder-title{
+    margin: 0.1rem auto;
+    text-align: center;
+}
+
+.card-reminder-para{
+    font-size: 0.7rem;
+    width: 7rem;
+    margin: 0.4rem auto;
+    font-family: var(--font-family);
+} 
+
+.insight-vector{
+    width: 2.5rem;
+    margin: 0.2rem 0 0 0.2rem;
+}
+
+.card-report-title{
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;
+    max-width: 8rem;
+    margin: auto;
+}
+
+.card-insight-para{
+    font-size: 0.8rem;
+    width: 8rem; 
+    margin: 0.4rem auto;
+    font-family: var(--font-family);
+}
+
+.section-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 2rem;
+    left: 47rem;
+    font-family: var(--font-family);
+}
+
+.account-section{
+    text-align: center;
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden;
+}
+
+.account-section{
+   width: 100%;
+}
+
+.account-section-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.account-section-heading{
+    font-family: poppins;
+}
+
+.account-btn{
+    padding: 0.6rem 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    margin: 2rem 25rem 0 0;
+    cursor: pointer;
+}
+
+.budget-btn{
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 0.8rem;   
+    cursor: pointer;
+}
+
+.income-btn{
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    margin: 2rem 10rem 0 0;
+    cursor: pointer;
+}
+
+.report-btn{
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.account-content {
+    width: 400px;
+    height: 200px;
+    background-color: var(--secondary-color);
+    margin: 3rem auto 0 auto;
+    border-radius: 8rem 8rem 0 0;
+    padding-top: 3rem;
+}
+
+.account-phone-mockup {
+    position: relative;
+    left: 1rem;
+    bottom: 4rem;
+    width: 200px;
+
+}
+.feature-container{
+    background-color: var(--neutral-color);
+    height: 689px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.feature-section{
+    width: fit-content;
+    position: relative;
+}
+
+.testimonial-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+    bottom: 9.3rem; 
+}
+
+.testimonial-title{
+    position: relative;
+    left: 20rem; 
+    display: inline-block;
+    padding-top: 1rem;
+    font-size: 1.5rem; 
+}
+
+.right-card {
+    width: 250px;
+    height: auto;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0.8rem;
+}
+
+.middle-card {
+    width: 260px;
+    min-height: 360px;
+    background-color: var(--primary-color);
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.left-card {
+    width: 250px;
+    min-height: 300px;
+    background-color: var(--secondary-color);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.top-card{
+    height: 250px;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 7rem 0;
+    position: relative;
+    bottom: 3.3rem;
+}
+
+.bottom-card {
+    height: 250px;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 0 7rem;
+    position: relative;
+    left: 50rem;
+    bottom: 14rem;
+}
+
+.star-icon{
+    width: 6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-content{
+    margin: 0.7rem auto;
+    padding: 0.7rem auto;
+}
+
+.user{
+    width: 6rem;
+    display: block;
+    margin: 0.7rem auto;
+}
+
+.contact-avarta{
+    width: 5rem;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.faq-section {
+    padding: 30px 20px;
+  
+}
+.faq-main-container{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: -6rem;
+    flex-wrap: wrap;
+}
+
+.top-angle{
+    width: 190px;
+    height: 220px;
+     background-color: var(--secondary-color);
+     border-radius: 0 0 7rem 0;
+     position: relative;
+     bottom: 2rem;
+     right: 1.3rem;
+}
+
+.faq{
+    max-width: 360px;
+    background-color: var(--primary-color); 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: relative;
+    padding: 1rem;
+    bottom: -1rem;
+    right: 6rem; 
+    margin-bottom: 4rem;
+ 
+}
+
+.faq-title{
+   font-weight: bold;
+    position: relative;
+    right: 3rem;
+}
+
+.faq-btn-icon{
+    width: 2rem;
+   
+}
+
+.faq-btn{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0; 
+    margin: 1rem  auto 0 auto;
+    font-weight: 600;
+    font-family: var(--font-family);
+    border-radius: 0.6rem;
+    border: none;
+    background-color: var(--secondary-color);
+    gap: 9rem;
+    cursor: pointer;
+
+}
+
+.faq-btn-last{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0;
+    margin: 1rem auto 1rem auto;
+    font-weight: 600;
+    font-family: var(--font-family);
+    border-radius: 0.6rem;
+    border: none;
+    background-color: var(--secondary-color);
+    gap: 4rem;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: var(--primary-color); 
+    color: var(--neutral-color);
+    padding: 20px 30px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo{
+    margin-top: 0.5rem;
+    width: 3rem;
+    padding: 0;
+    color: var(--background-color);
+    fill: var(--background-color);
+}
+
+ 
+.footer-container{
+ max-width: 1440px;
+ display: flex;
+ justify-content: space-between;
+ margin: auto;
+ flex-direction: column;
+ align-items: center;
+} 
+
+.footer title{
+    display: flex;
+    justify-content: center;
+    padding: 0 auto ;
+}
+
+.footer title, h3{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: normal;
+    padding: 0;
+}
+
+.footer title, span{
+    font-size: 2rem;
+    font-family: var(--font-family);
+}
+
+.footer title, p{
+   font-size: 1rem;
+   text-align: center;
+   font-family: var(--font-family);
+}
+
+.store-badges{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 2rem auto; 
+gap: 1rem;
+
+}
+
+.cotanct{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cotanct-icon{
+    width: 1.5rem;
+
+}
+
+.social-icon{
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.apple-store-badge{
+    width: 10rem;
+}
+
+.google-store-badge{
+    width: 11rem;
+}
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul li, a{
+    list-style: none;
+    color: var(--neutral-color);
+    margin: 1rem 0 0 0;
+}
+
+
