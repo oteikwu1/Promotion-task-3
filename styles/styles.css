@@ -409,9 +409,8 @@ p{
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    bottom: 9.3rem; 
+    bottom:7rem; 
     width: 100%; 
-    /* padding: 2rem;  */
     box-sizing: border-box;
     z-index: 999;
     flex-wrap: wrap;  
@@ -424,33 +423,33 @@ p{
 
 .testimonial-title{
     position: relative;
-    left: 28rem; 
+    left: 20rem; 
     display: inline-block;
     padding-top: 1rem;
     font-size: 1.5rem; 
 }
 
 .right-card {
-    width: 250px;
-    height: auto;
+    width: 230px;
+   min-height: 300px;
     background-color: var(--secondary-color);
     border-radius: 1rem;
-    padding: 0.8rem;
+
 }
 
 .middle-card {
-    width: 260px;
-    min-height: 360px;
+    width: 230px;
+    min-height: 330px;
     background-color: var(--primary-color);
-    padding: 0.7rem;
     border-radius: 1rem;
+    position: relative;
+    bottom: 1rem;
 }
 
 .left-card {
-    width: 250px;
+    width: 230px;
     min-height: 300px;
     background-color: var(--secondary-color);
-    padding: 0.8rem;
     border-radius: 1rem;
 }
 .top-card{
@@ -468,8 +467,8 @@ p{
     background-color: var(--primary-color);
     border-radius: 0 0 0 7rem;
     position: relative;
-    left: 53.2rem;
-    bottom: 14rem;
+    left: 40.8rem;
+    bottom: 12rem;
 }
 
 .star-icon{
@@ -485,15 +484,16 @@ p{
 }
 
 .star-icon-3{
-    width: 6rem;
+    width: 4rem;
     display: block;
     margin: 0 auto;
 }
 
 
 .card-content{
-    margin: 0.7rem auto;
-    padding: 0.7rem auto;
+    padding: 0.7rem 0.8rem;
+    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .user{
@@ -503,7 +503,7 @@ p{
 }
 
 .contact-avarta{
-    width: 5rem;
+    width: 4rem;
     display: block;
     margin: 0.5rem auto;
 }
@@ -543,14 +543,14 @@ p{
     padding: 1rem;
     bottom: -1rem;
     right: 6rem; 
-    margin-bottom: 4rem;
+    margin: 3rem 4rem  3rem 0;
  
 }
 
 .faq-title{
    font-weight: bold;
     position: relative;
-    right: 3rem;
+    left: 1rem;
 }
 
 .faq-btn-icon{
